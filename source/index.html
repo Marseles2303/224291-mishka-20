@@ -7,21 +7,21 @@
   <body class="page__body">
     <header class="page-header">
       <a class="page-header__logo">
-        <img src="https://via.placeholder.com/150x150">
+        <img src="https://via.placeholder.com/150x150" alt="логотип "Мишка">
       </a>
       <nav class="site-navigation">
         <ul class="site-navigation__list">
           <li class="site-navigation__item">
-            <a href="#">
+            <a class="site-navigation__link" href="#">
               Каталог товаров
             </a>
           </li>
           <li class="site-navigation__item">
-            <a href="#">
+            <a class="site-navigation__link" href="#">
               Вязание на заказ
           </li>
           <li class="site-navigation__item">
-            <a href="#">
+            <a class="site-navigation__link" href="#">
               Поиск по сайту
             </a>
           </li>
@@ -35,82 +35,83 @@
     </header>
     <main class="page-main">
       <h1 class="site-title">Милые штуки ручной работы для домa</h1>
-      <section class="catalog">
-        <ul class="catalog__list">
-          <li class="catalog__item">
+      <section class="product">
+        <ul class="product__list">
+          <li class="product__item">
             <a href="#">Предметы интерьера</a>
           </li>
-          <li class="catalog__item">
+          <li class="product__item">
             <a href="#">Детские игрушки</a>
           </li>
         </ul>
       </section>
-      <article class="promo-action">
-        <h1 class="promo-action__title">Вязаные корзинки</h1>
-        <h2 class="promo-action__name">товар недели</h2>
-        <p class="promo-action__description">Экологически чистая пряжа,
+      <article class="featured">
+        <h2 class="featured__title">Вязаные корзинки</h2>
+        <p class="featured__name">товар недели</p>
+        <p class="featured__description">Экологически чистая пряжа,
           ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-        <table class="promo-action__parameters">
-          <tr class="promo-action__elements">
-            <td class="promo-action__element">Цвет:</td>
-            <td class="promo-action__parameter">«Тиффани»/серый</td>
+        <table class="featured__parameters">
+          <tr class="featured__elements">
+            <td class="featured__element">Цвет:</td>
+            <td class="featured__parameter">«Тиффани»/серый</td>
           </tr>
-          <tr class="promo-action_elements">
-            <td class="promo-action__element">Диаметр:</td>
-            <td class="promo-action__parameter">25 см</td>
+          <tr class="featured_elements">
+            <td class="featured__element">Диаметр:</td>
+            <td class="featured__parameter">25 см</td>
           </tr>
-          <tr class="promo-action_elements">
-            <td class="promo-action__element">Высота:</td>
-            <td class="promo-action__parameter">15 см</td>
+          <tr class="featured_elements">
+            <td class="featured__element">Высота:</td>
+            <td class="featured__parameter">15 см</td>
           </tr>
         </table>
-        <div class="promo-action__cost">Цена: 990 руб.</div>
-        <button class="promo-action__button">заказать</button>
+        <p class="featured__cost">Цена: 990 руб.</p>
+        <a class="featured__button">заказать</a>
       </article>
-      <section class="info-company">
-        <h1 class="info-company__title">Коротко о нас:</h1>
-        <ul class="info-company__list">
-          <li clas="info-company__item">Экологически чистые материалы</li>
-          <li clas="info-company__item">Скандинавский стиль по российской цене</li>
-          <li clas="info-company__item">Увеличивает лайки на фотографиях</li>
-          <li clas="info-company__item">Связано вручную с любовью и умилением</li>
-          <li clas="info-company__item">Поддержка отечественного производителя</li>
-          <li clas="info-company__item">Поставляется в подарочной упаковке</li>
+      <section class="about">
+        <h2 class="about__title">Коротко о нас:</h2>
+        <ul class="about__list">
+          <li clas="about__item">Экологически чистые материалы</li>
+          <li clas="about__item">Скандинавский стиль по российской цене</li>
+          <li clas="about__item">Увеличивает лайки на фотографиях</li>
+          <li clas="about__item">Связано вручную с любовью и умилением</li>
+          <li clas="about__item">Поддержка отечественного производителя</li>
+          <li clas="about__item">Поставляется в подарочной упаковке</li>
         </ul>
       </section>
       <section class="feedback">
-        <h1 class="feedback__caption">Отзывы</h1>       
-        <p class="feedback__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров
+        <h2 class="feedback__caption">Отзывы</h2>       
+        <blockquote class="feedback__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров
           и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают
-          больше лайков!</p>
+          больше лайков!</blockquote>
         <p class="feedback__author">Анастасия Красильникова @misssssiskras</p>
-        <button class="feedback__button">Написать</button>
+        <a class="feedback__button">Написать</a>
       </section>
       <section class="contacts">
-        <h1 class="contacts__title">Контакты</h1>
-        <p class="contacts__mail">e-mail:
-          <a class="contacts--link" href="info@mimimishkashop.ru"></a>
+        <h2 class="contacts__title">Контакты</h2>
+        <p class="contacts__text">e-mail:
+          <a class="contacts__link" href="info@mimimishkashop.ru"></a>
         </p>
-        <p class="contacts__address">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</p>
-        <img src="https://via.placeholder.com/150x150">
-        <button class="contacts__btn">Напишите нам</button>
+        <p class="contacts__text">адрес:</p>
+          <p class="contacts__text address">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</p>
+        <img src="https://via.placeholder.com/150x150" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
+        <a class="contacts__btn">Напишите нам</a>
       </section>
     </main>
     <footer class="page-footer">
       <ul class="social-list">
         <li class="social-list__item">
-          <a class="social-list__link social__link--instagram" href="#">instagram</a>
+          <a class="social-list__link social-list__link--instagram" href="#">instagram</a>
         </li>
         <li class="social-list__item">
-          <a class="social-list__link social__link--facebook" href="#">facebook</a>
+          <a class="social-list__link social-list__link--facebook" href="#">facebook</a>
         </li>
         <li class="social-list__item">
-          <a class="social-list__link social__link--twitter" href="#">twitter</a>
+          <a class="social-list__link social-list__link--twitter" href="#">twitter</a>
         </li>
       </ul>
       <div class="page-footer__copyright">
         <b class="copyright__text">Разработано</b>
-        <a class="copyright__link-icon" href="#" aria-label="HTML Academy">HTML Academy</a>
+        <a class="copyright__link-icon" href="#">HTML Academy</a>
       </div>  
     </footer>
   </body>
