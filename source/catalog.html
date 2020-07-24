@@ -1,83 +1,94 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Мишка</title>
-  </head>
-  <body class="page__body">
-    <header class="page-header">
-      <a class="page-header__logo">
-        <img src="https://via.placeholder.com/150x150" alt="логотип "Мишка">
-      </a>
-      <nav class="site-navigation">
-        <ul class="site-navigation__list">
-          <li class="site-navigation__item">
-            <a class="site-navigation__link" href="#">
-              Каталог товаров
-            </a>
+	<head>
+		<meta charset="utf-8">
+		<title>HTML Academy: Мишка</title>
+	</head>
+	<body class="page__body">
+		<header class="page-header">
+			<a class="page-header__logo">
+				<img src="https://via.placeholder.com/150x150" alt="Мишка">
+			</a>
+			<nav class="site-navigation">
+				<ul class="site-navigation__list">
+					<li class="site-navigation__item">
+						<a class="site-navigation__link" href="#">
+							Каталог товаров
+						</a>
+					</li>
+					<li class="site-navigation__item">
+						<a class="site-navigation__link" href="#">
+							Вязание на заказ
+						</li>
+						<li class="site-navigation__item">
+							<a class="site-navigation__link" href="#">
+								Поиск по сайту
+							</a>
+						</li>
+						<li class="site-navigation__item">
+							<a href="#">
+								Корзина: пока пуста
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</header>
+			<main class="page-main">
+				<h1 class="headline">Каталог товаров</h1>
+				<section class="cards">
+          <h2 class="visually-hidden">Все товары</h2>
+					<article class="product-card">
+						<img class="product-card__picture" src="https://via.placeholder.com/150x150" alt="игрушкa зайчик">
+						<h3 class="product-card__title">Зайчик-попрыгайчик
+              <a class="product-card__link" href="#"></a>
+            </h3>
+						<p class="product-card__parameter">Рост 30 см, вес 200 г</p>
+            <b class="product-card__price">1 200 руб.</b>
+            <a href="#" class="product-card__basket" aria-label="добавить в корзину"></a>
+					</article>
+					<article class="product-card">
+						<img class="product-card__picture" src="https://via.placeholder.com/150x150" alt="изображение корзинки">
+						<h3 class="product-card__title">Корзинка для белья
+              <a class="product-card__link" href="#"></a>
+            </h3>
+						<p class="product-card__parameter">Диаметр 15 см, высота 10 см</p>
+            <b class="product-card__price">690 руб.</b>
+            <a href="#" class="product-card__basket" aria-label="добавить в корзину"></a>
+					</article>
+					<article class="product-card">
+						<img class="product-card__picture" src="https://via.placeholder.com/150x150" alt="изображение большой корзинки">
+						<h3 class="product-card__title">Большая корзинка для игрушек
+              <a class="product-card__link" href="#"></a>
+            </h3>
+						<p class="product-card__parameter">Диаметр 30 см, высота 30 см</p>
+            <b class="product-card__price">1 500 руб.</b>
+            <a href="#" class="product-card__basket" aria-label="добавить в корзину"></a>
+					</article>
+				</section>
+				<section class="creation">
+					<h2 class="creation_caption">Процесс производства</h2>
+					<video class="creation__video" src="https://via.placeholder.com/150x150"></video>
+					<p class="creation__copy">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как
+					появляются наши товары.</p>
+					<a class="creation__btn" href="#">сделать заказ</a>
+				</section>
+			</main>
+			<footer class="page-footer">
+				<ul class="social-list">
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--instagram" href="#" aria-label="instagram"></a>
           </li>
-          <li class="site-navigation__item">
-            <a class="site-navigation__link" href="#">
-              Вязание на заказ
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--facebook" href="#" aria-label="facebook"></a>
           </li>
-          <li class="site-navigation__item">
-            <a class="site-navigation__link" href="#">
-              Поиск по сайту
-            </a>
-          </li>
-          <li class="site-navigation__item">
-            <a href="#">
-              Корзина: пока пуста
-            </a>
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--twitter" href="#" aria-label="twitter"></a>
           </li>
         </ul>
-      </nav>
-    </header>
-    <main class="page-main">
-        <h1 class="catalog headline">Каталог товаров</h1>
-        <section class="cards">
-            <article class="product-card">
-                <img class="product-card__picture"src="https://via.placeholder.com/150x150" alt="изображение игрушки зайчик">
-                <h2 class="product-card__title">Зайчик-попрыгайчик</h2>
-                <p class="product-card__parameter">Рост 30 см, вес 200 г</p>
-                <b class="product-card__price">1 200 руб.</b>
-            </article>
-            <article class="product-card">
-                <img class="product-card__picture"src="https://via.placeholder.com/150x150" alt="изображение корзинки">
-                <h2 class="product-card__title">Корзинка для белья</h2>
-                <p class="product-card__parameter">Диаметр 15 см, высота 10 см</p>
-                <b class="product-card__price">690 руб.</b>
-            </article>
-            <article class="product-card">
-                <img class="product-card__picture" src="https://via.placeholder.com/150x150" alt="изображение большой корзинки">
-                <h2 class="product-card__title">Большая корзинка для игрушек</h2>
-                <p class="product-card__parameter">Диаметр 30 см, высота 30 см</p>
-                <b class="product-card__price">1 500 руб.</b>
-            </article>
-        </section>
-        <section class="creation">
-            <h2 class="creation_caption">Процесс производства</h2>
-            <video class="creation__video" src="https://via.placeholder.com/150x150"></video>
-            <p class="creation__copy">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-            <a class="creation__btn" href="#">сделать заказ</a>
-        </section>
-    </main>
-    <footer class="page-footer">
-        <ul class="social-list">
-          <li class="social-list__item">
-            <a class="social-list__link social-list__link--instagram" href="#">instagram</a>
-          </li>
-          <li class="social-list__item">
-            <a class="social-list__link social-list__link--facebook" href="#">facebook</a>
-          </li>
-          <li class="social-list__item">
-            <a class="social-list__link social-list__link--twitter" href="#">twitter</a>
-          </li>
-        </ul>
-        <div class="page-footer__copyright">
-          <b class="copyright__text">Разработано</b>
-          <a class="copyright__link-icon" href="#">HTML Academy</a>
-        </div>  
-      </footer>
-    </body>
-  </html>
+				<div class="page-footer__copyright">
+					<b class="copyright__text">Разработано</b>
+					<a class="copyright__link-icon" href="#">HTML Academy</a>
+				</div>
+			</footer>
+		</body>
+	</html>
