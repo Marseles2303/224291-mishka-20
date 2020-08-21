@@ -26,3 +26,27 @@
 .about__item {
   padding-bottom: 83px;
 }
+
+@media (min-width: @tablet-width) {
+  .about__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .about__list {
+    font-size: 20px;
+    line-height: 22px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 70px;
+  }
+
+  .about__item--second {
+    grid-row-start: 2;
+  }
+
+  .about__item--third {
+    grid-row-start: 3;
+  }
+}

@@ -3,18 +3,24 @@
 
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=320, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Мишка</title>
   <link href="css/style.css" rel="stylesheet" />
 </head>
 
 <body class="page">
   <header class="page-header">
-    <a class="page-header__logo">
-      <img src="img/logo-mobile.svg" alt="Мишка" />
-    </a>
+    <div class="page-header__logo-wrapper">
+      <a class="page-header__logo">
+        <img src="img/logo-mobile.svg" alt="Мишка" />
+      </a>
+    </div>
+    <button class="page-header__button" aria-label="кнопка меню"></button>
     <nav class="site-navigation">
-      <ul class="site-navigation__list">
+      <a class="site-navigation__logo">
+        <img src="img/logo-tablet.svg" alt="Мишка" />
+      </a>
+      <ul class="site-navigation__list site-navigation__list--left">
         <li class="site-navigation__item">
           <a class="site-navigation__link" href="catalog.html">
             Каталог товаров
@@ -25,6 +31,12 @@
             Вязание на заказ
           </a>
         </li>
+        </li>
+      </ul>
+      <p class="site-navigation__delivery">
+        Бесплатная доставка по России
+      </p>
+      <ul class="site-navigation__list site-navigation__list--right">
         <li class="site-navigation__item">
           <a class="site-navigation__link" href="#">
             Поиск по сайту
@@ -33,6 +45,18 @@
         <li class="site-navigation__item">
           <a class="site-navigation__link" href="#">
             Корзина: пока пуста
+          </a>
+        </li>
+      </ul>
+      <ul class="site-navigation__list site-navigation__list--lower">
+        <li class="site-navigation__item site-navigation__item--lower">
+          <a class="site-navigation__link" href="#">
+            Новые поступления
+          </a>
+        </li>
+        <li class="site-navigation__item site-navigation__item--lower">
+          <a class="site-navigation__link" href="#">
+            Распродажа
           </a>
         </li>
       </ul>
@@ -56,36 +80,38 @@
       <article class="featured">
         <h2 class="featured__title">Вязаные корзинки</h2>
         <p class="featured__name">товар недели</p>
-        <p class="featured__description">
-          Экологически чистая пряжа, ручная работа. Доступны в шести
-          расцветках, и трех размерах.
-        </p>
-        <table class="featured__parameters">
-          <tr class="featured__elements">
-            <td class="featured__element">Цвет:</td>
-            <td class="featured__parameter">«Тиффани»/серый</td>
-          </tr>
-          <tr class="featured_elements">
-            <td class="featured__element">Диаметр:</td>
-            <td class="featured__parameter">25 см</td>
-          </tr>
-          <tr class="featured_elements">
-            <td class="featured__element">Высота:</td>
-            <td class="featured__parameter">15 см</td>
-          </tr>
-        </table>
-        <p class="featured__cost">Цена: 990 руб.</p>
-        <a class="featured__button" href="#">заказать</a>
+        <div class="featured__wrapper">
+          <p class="featured__description">
+            Экологически чистая пряжа, ручная работа. Доступны в шести
+            расцветках, и трех размерах.
+          </p>
+          <table class="featured__parameters">
+            <tr class="featured__elements">
+              <td class="featured__element">Цвет:</td>
+              <td class="featured__parameter">«Тиффани»/серый</td>
+            </tr>
+            <tr class="featured_elements">
+              <td class="featured__element">Диаметр:</td>
+              <td class="featured__parameter">25 см</td>
+            </tr>
+            <tr class="featured_elements">
+              <td class="featured__element">Высота:</td>
+              <td class="featured__parameter">15 см</td>
+            </tr>
+          </table>
+          <p class="featured__cost">Цена: 990 руб.</p>
+          <a class="featured__button" href="#">заказать</a>
+        </div>
       </article>
       <section class=" about">
         <h2 class="about__title">Коротко о нас:</h2>
         <ul class="about__list">
           <li class="about__item">Экологически чистые материалы</li>
-          <li class="about__item">Скандинавский стиль по российской цене</li>
-          <li class="about__item">Увеличивает лайки на фотографиях</li>
-          <li class="about__item">Связано вручную с любовью и умилением</li>
-          <li class="about__item">Поддержка отечественного производителя</li>
-          <li class="about__item">Поставляется в подарочной упаковке</li>
+          <li class="about__item--second">Скандинавский стиль по российской цене</li>
+          <li class="about__item--third">Увеличивает лайки на фотографиях</li>
+          <li class="about__item--fourth">Связано вручную с любовью и умилением</li>
+          <li class="about__item--fifth">Поддержка отечественного производителя</li>
+          <li class="about__item--sixth">Поставляется в подарочной упаковке</li>
         </ul>
       </section>
       <section class="feedback">

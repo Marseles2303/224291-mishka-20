@@ -68,4 +68,107 @@
   padding-left: 70px;
   padding-right: 70px;
   margin-bottom: 73px;
+  text-decoration: none;
+  color: #444444;
+}
+
+@media (min-width: @tablet-width) {
+  .featured {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .featured__name {
+    align-self: flex-end;
+  }
+
+  .featured__title {
+    font-size: 43px;
+    line-height: 50px;
+    min-width: 450px;
+    margin-right: 105px;
+  }
+
+  .featured__description {
+    width: 292px;
+    font-size: 17px;
+    line-height: 30px;
+    margin: 0;
+  }
+
+  .featured__wrapper {
+    order: 2;
+    min-width: 680px;
+    background-image: url("../img/triple-set-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    margin-bottom: 52px;
+    padding-top: 50px;
+  }
+
+  .featured__parameters {
+    background-image: none;
+    padding-bottom: 40px;
+    padding-top: 45px;
+  }
+
+  .featured__element {
+    width: 20px;
+    padding: 0;
+  }
+
+  .featured__parameter {
+    width: 300px;
+    padding: 0;
+  }
+
+  .featured__cost {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 40px;
+  }
+
+  .featured__button {
+    padding-left: 86px;
+    padding-right: 86px;
+    align-self: flex-end;
+    margin: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .featured {
+    background-image: url("../img/triple-set-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 80% bottom;
+    margin-bottom: 160px;
+  }
+
+  .featured__name {
+    order: -1;
+    margin-right: 43px;
+    align-self: center;
+  }
+
+  .featured__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    background-image: none;
+    min-width: 293px;
+    padding-top: 35px;
+  }
+
+  .featured__element {
+    margin-right: 20px;
+  }
+
+
+  .featured__title {
+    min-width: 545px;
+    align-self: center;
+    font-size: 53px;
+    line-height: 57px;
+    margin-right: 300px;
+  }
 }

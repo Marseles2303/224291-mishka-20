@@ -18,7 +18,7 @@
 }
 
 .product__item--dark {
-  background-color:@dark-sea;
+  background-color: @dark-sea;
 }
 
 .product-link {
@@ -27,4 +27,21 @@
   font-family: @base-font;
   font-size: 19px;
   line-height: 24px;
+}
+
+@media (min-width: @tablet-width) {
+  .product__list {
+    display: flex;
+    flex-basis: 767px;
+  }
+
+  .product__item {
+    flex-grow: 1;
+    padding-left: 36px;
+  }
+
+  .product-link {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
