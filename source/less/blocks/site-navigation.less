@@ -30,27 +30,15 @@
 
 @media (min-width: @tablet-width) {
   .site-navigation {
-    display: flex;
-    flex-wrap: wrap;
+    display: block;
+    order: 1;
   }
 
-.site-navigation__list--right {
-  order: -1;
-  display: flex;
-  flex-wrap: wrap;
-  width: 348px;
+  .site-navigation__delivery {
+    display: block;
+    order: 2;
+  }
 }
-  
-.site-navigation__delivery {
-  display: inline;
-} 
-
-.site-navigation__list--left {
-  display: flex;
-}
-
-}
-   
 
 @media (min-width: @desktop-width) {
  

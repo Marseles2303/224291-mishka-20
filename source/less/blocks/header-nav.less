@@ -1,0 +1,35 @@
+
+.header-nav__logo-wrapper {
+    width: 86px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 22px;
+    margin-bottom: 22px;
+}
+.header-nav__button {
+    padding: 0;
+    width: 20px;
+    height: 15px;
+    background-image: url("../img/icon-menu-open.svg");
+    background-color: white;
+    background-repeat: no-repeat;
+    border: none;
+    position: absolute;
+    top: 35%;
+    right: 9%;
+}
+
+@media (min-width: @tablet-width) {
+    .header-nav {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .header-nav__button {
+        display: none;
+    }
+.header-nav__logo-wrapper {
+    margin-left: 0;
+    margin-right: 210px;
+    order: -1;
+}
+}
