@@ -17,29 +17,30 @@
 
 @media (min-width: @tablet-width) {
   .user-navigation {
-    display: flex;
-    flex-direction: row;
-    justify-content: baseline;
+    display: block;
     order: 0;
   }
 
   .user-navigation__list {
+    display: flex;
     padding: 0;
+    margin: 0;
   }
 
   .user-navigation__item--search {
     width: 83px;
-    height: 88px;
-    margin-right: 84px;
-    margin-top: -22px;
+    min-height: 88px;
     border-right: 1px solid #ECECEC;
     border-left: 1px solid #ECECEC;
     position: relative;
   }
 
-  .user-navigation__item--basket {
-    padding-right: 50px;
-
+  .user-navigation__link {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    padding-top: 29px;
+    padding-left: 71px;
   }
 
   span {
@@ -49,7 +50,7 @@
 
   .user-navigation__svg {
     position: absolute;
-    top: 45%;
-    right: 40%;
+    top: 36px;
+    right: 39%;
   }
 }
