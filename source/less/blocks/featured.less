@@ -1,3 +1,18 @@
+.featured {
+  margin-bottom: 31px;
+
+&::after {
+    content: "";
+    display: block;
+    height: 6px;
+    background-image: url(../img/bg-zigzag-line.svg);
+    background-size:  100%;
+    background-repeat: repeat-x;
+    background-size: 300px 100%;
+    transform: rotate(180deg);
+}
+}
+
 .featured__inner {
   margin: 0;
   margin-bottom: 17px;
@@ -100,9 +115,10 @@ border-bottom: 1px solid #ECECEC;
   border: 2px solid #444444;
   padding-top: 16px;
   padding-bottom: 16px;
-  margin-bottom: 73px;
+  margin-bottom: 36px;
   text-decoration: none;
   color: #444444;
+  box-sizing: border-box;
 }
 
 @media (min-width: @tablet-width) {
