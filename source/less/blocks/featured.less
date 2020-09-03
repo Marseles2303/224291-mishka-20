@@ -1,22 +1,6 @@
 .featured {
   margin-bottom: 31px;
 
-&::after {
-    content: "";
-    display: block;
-    height: 6px;
-    background-image: url(../img/bg-zigzag-line.svg);
-    background-size:  100%;
-    background-repeat: repeat-x;
-    background-size: 300px 100%;
-    transform: rotate(180deg);
-}
-}
-
-.featured__inner {
-  margin: 0;
-  margin-bottom: 17px;
-  padding: 0;
 }
 
 .featured__title {
@@ -38,6 +22,7 @@
   text-transform: uppercase;
   text-align: left;
   margin: 0;
+  margin-bottom: 23px;
 }
 
 .featured__content-text {
@@ -123,98 +108,118 @@ border-bottom: 1px solid #ECECEC;
 
 @media (min-width: @tablet-width) {
   .featured {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .featured__name {
-    align-self: flex-end;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: min-content 1fr min-content;
+    column-gap: 50px;
   }
 
   .featured__title {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    margin-bottom: 47px;
     font-size: 43px;
-    line-height: 50px;
-    min-width: 450px;
-    margin-right: 105px;
+  line-height: 50px;
   }
 
-  .featured__description {
-    width: 292px;
-    font-size: 17px;
-    line-height: 30px;
-    margin: 0;
+  .featured__name {
+    grid-column-start: 4;
+    grid-row-start: 1;
+    line-height: 17px;
+    padding-left: 67px;
+  }
+
+  .featured__content-text {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .featured__picture {
+    grid-column-start: 3;
+    grid-column-end: -1;
+    grid-row-start: 2;
+    grid-row-end: -1;
   }
 
   .featured__wrapper {
-    order: 2;
-    min-width: 680px;
-    margin-bottom: 52px;
-    padding-top: 50px;
-  }
-
-  .featured__parameters {
-    background-image: none;
-    padding-bottom: 40px;
-    padding-top: 45px;
-  }
-
-  .featured__element {
-    width: 20px;
-    padding: 0;
-  }
-
-  .featured__parameter {
-    width: 300px;
-    padding: 0;
-  }
-
-  .featured__cost {
-    font-size: 20px;
-    line-height: 24px;
-    margin-bottom: 40px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
   }
 
   .featured__button {
-    padding-left: 86px;
-    padding-right: 86px;
-    align-self: flex-end;
     margin: 0;
   }
 }
 
 @media (min-width: @desktop-width) {
   .featured {
-    background-image: url("../img/triple-set-desktop@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: 80% bottom;
-    margin-bottom: 160px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 119px min-content min-content;
+    column-gap: 57px;
+    margin-bottom: 67px;
+  }
+
+  .featured__title {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    font-size: 53px;
+    line-height: 57px;
+    position: relative;
+    z-index: 2;
+    margin: 0;
+    padding-top: 71px;
   }
 
   .featured__name {
-    order: -1;
-    margin-right: 43px;
-    align-self: center;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    margin: 0;
+    padding-top: 71px;
+  }
+
+  .featured__content-text {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    margin: 0;
+    padding-top: 44px;
+  }
+
+  .featured__description {
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 60px;
+  }
+
+  .featured__parameters {
+    margin-bottom: 109px;
+  }
+
+  .featured__picture {
+    grid-column-start: 4;
+    grid-column-end: -1;
+    grid-row-start: 1;
+    grid-row-end: -1;
   }
 
   .featured__wrapper {
-    display: flex;
-    flex-direction: column;
-    align-self: flex-end;
-    background-image: none;
-    min-width: 293px;
-    padding-top: 35px;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
   }
 
-  .featured__element {
-    margin-right: 20px;
+  .featured__cost {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 33px;
   }
 
-
-  .featured__title {
-    min-width: 545px;
-    align-self: center;
-    font-size: 53px;
-    line-height: 57px;
-    margin-right: 300px;
+  .featured__button {
+    font-size: 17px;
+    line-height: 20px;
+    text-transform: uppercase;
   }
 }
