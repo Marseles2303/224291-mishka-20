@@ -1,5 +1,18 @@
 .feedback {
+  position: relative;
+  margin-bottom: 38px;
 
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url(../img/bg-zigzag-line.svg);
+    height: 6px;
+    width: 100%;
+    background-repeat: repeat-x;
+    background-size: auto 100%;
+    transform: rotate(180deg);
+  }
 }
 
 .feedback__caption {
@@ -16,6 +29,7 @@
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
+  margin-bottom: 33px;
 }
 
 .feedback__user {
@@ -35,7 +49,149 @@
   border: 2px solid #444444;
   padding-top: 16px;
   padding-bottom: 16px;
-  margin-bottom: 73px;
+  margin-bottom: 45px;
   text-decoration: none;
   color: #444444;
+}
+
+.feedback__btn-slide {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 38px;
+  border: 1px solid #ECECEC;
+  min-height: 52px;
+}
+
+.feedback__btn {
+  border: 0;
+  width: 50px;
+  height: 26px;
+  background: transparent;
+}
+
+.feedback__btn--left {
+  position: absolute;
+  background-image: url(../img/icon-left-arrow.svg);
+  background-repeat: no-repeat;
+  left: 20%;
+}
+
+.feedback__btn--right {
+  position: absolute;
+  background-image: url(../img/icon-left-arrow.svg);
+  background-repeat: no-repeat;
+  right: 20%;
+  transform: rotate(180deg);
+}
+
+@media (min-width: @tablet-width) {
+  .feedback {
+    margin-bottom: 68px;
+    background-image: url(../img/review@1x.jpg);
+    background-repeat: no-repeat;
+    background-size: 350px 457px;
+    background-position: 0 0;
+    padding-top: 82px;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: -50px;
+      background-image: url(../img/bg-zigzag-line.svg);
+      height: 17px;
+      width: 100%;
+      background-repeat: repeat-x;
+      background-size: auto 100%;
+      transform: rotate(180deg);
+    }
+  }
+
+  .feedback__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .feedback__caption {
+    font-size: 43px;
+    line-height: 50px;
+    order: -2;
+    margin: 0;
+    margin-right: 284px;
+  }
+
+  .feedback__button {
+    order: -1;
+    width: 175px;
+  }
+
+  .feedback__btn-slide {
+    width: 175px;
+    border: none;
+  }
+
+  .feedback__btn {
+    width: 137px;
+  }
+
+
+  .feedback__author {
+    font-size: 18px;
+  }
+
+  .feedback__user {
+    display: block;
+    opacity: 1;
+  }
+
+  .feedback__btn--left {
+    left: 2px;
+  }
+
+  .feedback__btn--right {
+    right: 2px;
+  }
+
+  .feedback__text {
+    margin-bottom: 61px;
+    font-size: 17px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .feedback {
+    background-image: none;
+    margin-bottom: 161px;
+
+    &::after {
+      display: none;
+    }
+  }
+  .feedback__inner {
+    background-image: url(../img/review@1x.jpg);
+    background-repeat: no-repeat;
+    padding-left: 176px;
+    padding-top: 85px;
+    position: relative;
+
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url(../img/bg-zigzag-line.svg);
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      height: 23px;
+      width: 100%;
+      transform: rotate(180deg);
+      bottom: -67px;
+      left: 5px;
+    }
+  }
+  .feedback__caption {
+    font-size: 53px;
+    line-height: 57px;
+}
 }
