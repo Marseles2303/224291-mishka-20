@@ -63,7 +63,7 @@ margin-right: -30px;
 @media (min-width: @tablet-width) {
   .contacts__inner {
     display: grid;
-    grid-template-columns: 334px 1fr;
+    grid-template-columns: 334px 334px;
   }
 
 .contacts__title {
@@ -73,19 +73,24 @@ margin-right: -30px;
 line-height: 50px;
 }
 
-.contacts__text--email {
-  grid-column-start: 1;
-  grid-column-end: 2;
+ .contacts__text {
+   grid-column-start: 1;
+  grid-column-end: 4;
+ }
+
+.contacts__email {
+  margin-right: 140px;
+  display: flex;
 }
 
-.contacts__text--address {
-  grid-column-start: -1;
-  font-size: 17px;
+.contacts__signature {
+  width: 53px;
+  padding: 0; 
 }
 
 .contacts__map {
   grid-column-start: 1;
-  grid-column-end: 3;
+  grid-column-end: 4;
   margin-bottom: 56px;
   margin-left: calc((100vw - 668px) / -2);
   margin-right: calc((100vw - 668px) / -2);
@@ -94,9 +99,10 @@ line-height: 50px;
 
 .contacts__btn {
   grid-column-start: 1;
-  grid-column-end: -1;
-  margin-left: 219px;
-  margin-right: 219px;
+  grid-column-end: 4;
+  width: 228px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .contacts__signature{
@@ -111,42 +117,29 @@ line-height: 50px;
 
 @media (min-width: @desktop-width) {
   .contacts__inner {
-    grid-template-columns: 110px 297px 527px;
-    grid-template-rows: 141px 62px 111px 140px;
-    column-gap: 58px;
-    row-gap: 0;
+    grid-template-columns: 175px 350px 525px;
   }
 
   .contacts__title {
     grid-column-start: 2;
     grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
     font-size: 53px;
   line-height: 57px;
   }
 
   .contacts__text--email {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
     font-size: 17px;
     line-height: 30px;
   }
 
 .contacts__text--address {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 3;
+  
   grid-row-end: 4;
   font-size: 17px;
 }
 
 .contacts__btn {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 4;
+  
   margin: 0;
   max-height: 52px;
 
@@ -154,8 +147,9 @@ line-height: 50px;
 
 .contacts__map {
   grid-column-start: 3;
-  grid-row-start: 1;
-  grid-row-end: -1;
+  grid-column-end: 4;
+  margin: 0;
+
 }
 }
 
