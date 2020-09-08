@@ -1,17 +1,25 @@
 .social-list {
-    padding-top: 25px;
-    padding-bottom: 20px;
-    padding-right: 0;
-    padding-left: 0;
-    text-align: center;
-    border-bottom: 1px solid #e5e5e5;
-  }
+  padding-top: 25px;
+  padding-bottom: 20px;
+  padding-right: 0;
+  padding-left: 0;
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
 
 .social-list__item {
   display: inline-block;
   vertical-align: top;
 
- &:not(:last-child) {
- margin-right: 40px;
+  &:not(:last-child) {
+    margin-right: 39px;
+  }
 }
+
+@media (min-width: @tablet-width) {
+  .social-list {
+    padding: 0;
+    border-bottom: none;
+    margin: 0;
+  }
 }
