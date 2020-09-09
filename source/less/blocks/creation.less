@@ -1,6 +1,11 @@
 .creation {
-  border: 1px solid #ECECEC;
   margin-bottom: 58px;
+}
+
+.creation__content {
+  border: 1px solid #ECECEC;
+  display: flex;
+  flex-direction: column;
 }
 
 .creation__header {
@@ -24,10 +29,12 @@
 
 .creation__video {
   margin-bottom: 35px;
+  width: 100%;
 }
 
 .creation__copy {
   padding-left: 34px;
+  padding-right: 31px;
   text-align: left;
   font-size: 13px;
   line-height: 24px;
@@ -53,4 +60,14 @@
   margin-bottom: 33px;
   margin-left: 34px;
   margin-right: 34px;
+}
+
+.creation__media {
+  position: relative;
+}
+
+.creation_play {
+  position: absolute;
+  left: 37%;
+  top: 30%;
 }

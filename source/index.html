@@ -18,8 +18,8 @@
           </a>
         </div>
         <button class="header-nav__button" aria-label="кнопка меню"></button>
-        <div class="site-navigation">
-          <ul class="site-navigation__list">
+        <div class="header-nav__inner">
+          <ul class="site-navigation">
             <li class="site-navigation__item">
               <a class="site-navigation__link site-navigation__link--catalog" href="catalog.html">
                 Каталог товаров
@@ -31,12 +31,10 @@
               </a>
             </li>
           </ul>
-        </div>
-        <p class="site-navigation__delivery">
-          Бесплатная доставка по России
-        </p>
-        <div class="user-navigation">
-          <ul class="user-navigation__list">
+          <p class="site-navigation__delivery">
+            Бесплатная доставка по России
+          </p>
+          <ul class="user-navigation">
             <li class="user-navigation__item user-navigation__item--search">
               <a class="user-navigation__link" href="#">
                 <svg class="user-navigation__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
@@ -54,19 +52,19 @@
               </a>
             </li>
           </ul>
+          <ul class="site-navigation site-navigation--lower">
+            <li class="site-navigation__item site-navigation__item--lower">
+              <a class="site-navigation__link" href="#">
+                Новые поступления
+              </a>
+            </li>
+            <li class="site-navigation__item site-navigation__item--lower">
+              <a class="site-navigation__link" href="#">
+                Распродажа
+              </a>
+            </li>
+          </ul>
         </div>
-        <ul class="site-navigation__list site-navigation__list--lower">
-          <li class="site-navigation__item site-navigation__item--lower">
-            <a class="site-navigation__link" href="#">
-              Новые поступления
-            </a>
-          </li>
-          <li class="site-navigation__item site-navigation__item--lower">
-            <a class="site-navigation__link" href="#">
-              Распродажа
-            </a>
-          </li>
-        </ul>
       </nav>
     </div>
   </header>
@@ -116,7 +114,7 @@
       </div>
     </article>
     <section class="about">
-      <div class="container">
+      <div class="container about__inner">
         <h2 class="about__title">Коротко о нас:</h2>
         <ul class="about__list">
           <li class="about__item">Экологически чистые материалы</li>
@@ -172,7 +170,7 @@
           </div>
         </div>
         <div class="contacts__map">
-          <img src="img/map-mobile@1x.jpg" width="320px" height="454px"
+          <img src="img/map-mobile@1x.jpg" width="320" height="454"
             alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101" />
         </div>
         <a class="contacts__btn" href="#">Напишите нам</a>
