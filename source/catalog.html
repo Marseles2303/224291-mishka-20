@@ -18,8 +18,8 @@
           </a>
         </div>
         <button class="header-nav__button" aria-label="кнопка меню"></button>
-        <div class="site-navigation">
-          <ul class="site-navigation__list">
+        <div class="header-nav__inner">
+          <ul class="site-navigation">
             <li class="site-navigation__item">
               <a class="site-navigation__link site-navigation__link--catalog" href="catalog.html">
                 Каталог товаров
@@ -31,12 +31,10 @@
               </a>
             </li>
           </ul>
-        </div>
-        <p class="site-navigation__delivery">
-          Бесплатная доставка по России
-        </p>
-        <div class="user-navigation">
-          <ul class="user-navigation__list">
+          <p class="site-navigation__delivery">
+            Бесплатная доставка по России
+          </p>
+          <ul class="user-navigation">
             <li class="user-navigation__item user-navigation__item--search">
               <a class="user-navigation__link" href="#">
                 <svg class="user-navigation__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
@@ -54,19 +52,19 @@
               </a>
             </li>
           </ul>
+          <ul class="site-navigation site-navigation--lower">
+            <li class="site-navigation__item site-navigation__item--lower">
+              <a class="site-navigation__link" href="#">
+                Новые поступления
+              </a>
+            </li>
+            <li class="site-navigation__item site-navigation__item--lower">
+              <a class="site-navigation__link" href="#">
+                Распродажа
+              </a>
+            </li>
+          </ul>
         </div>
-        <ul class="site-navigation__list site-navigation__list--lower">
-          <li class="site-navigation__item site-navigation__item--lower">
-            <a class="site-navigation__link" href="#">
-              Новые поступления
-            </a>
-          </li>
-          <li class="site-navigation__item site-navigation__item--lower">
-            <a class="site-navigation__link" href="#">
-              Распродажа
-            </a>
-          </li>
-        </ul>
       </nav>
     </div>
   </header>
@@ -93,22 +91,26 @@
           <article class="product-card">
             <img class="product-card__picture" src="img/photo-bowl-mobile@1x.jpg" width="260" height="195"
               alt="изображение корзинки" />
+              <div class="product-card__text">
             <h3 class="product-card__title">
               <a class="product-card__link" href="#">Корзинка для белья</a>
             </h3>
             <p class="product-card__parameter">Диаметр 15 см, высота 10 см</p>
             <b class="product-card__price">690 руб.</b>
             <a href="#" class="product-card__basket" aria-label="добавить в корзину"></a>
+          </div>
           </article>
           <article class="product-card">
             <img class="product-card__picture" src="img/photo-toys-mobile@1x.jpg" width="260" height="195"
               alt="изображение большой корзинки" />
+              <div class="product-card__text">
             <h3 class="product-card__title">
               <a class="product-card__link" href="#">Большая корзинка для игрушек</a>
             </h3>
             <p class="product-card__parameter">Диаметр 30 см, высота 30 см</p>
             <b class="product-card__price">1 500 руб.</b>
             <a href="#" class="product-card__basket" aria-label="добавить в корзину"></a>
+          </div>
           </article>
         </div>
       </section>
