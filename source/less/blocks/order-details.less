@@ -16,8 +16,60 @@
 
 .order-details__hint {
   font-family: inherit;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 16px;
-    margin-bottom: 30px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 30px;
+}
+
+@media (min-width: @tablet-width) {
+  .order-details {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: min-content min-content;
+    row-gap: 52px;
+  }
+
+  .order-details__title {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  .order-details__text {
+    grid-column-start: 2;
+    grid-column-end: -1;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  .order-details__hint {
+    grid-column-start: 3;
+    grid-column-end: -1;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 17px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .order-details {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: min-content min-content;
+    row-gap: 49px;
+  }
+
+  .order-details__title {
+    display: flex;
+    justify-content: center;
+  }
+
+  .order-details__hint {
+    grid-column-start: 4;
+    grid-column-end: -1;
+  }
 }

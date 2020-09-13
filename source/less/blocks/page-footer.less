@@ -34,9 +34,12 @@
   }
 
   .page-footer__inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .page-footer__copyright {
+    justify-content: flex-end;
   }
 
   .page-footer__logo-link {
@@ -45,4 +48,4 @@
 }
 
 
-  
+

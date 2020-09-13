@@ -5,6 +5,7 @@
 .order-type__title {
   margin-bottom: 30px;
 }
+
 .order-type__list {
   margin-bottom: 31px;
 }
@@ -35,33 +36,41 @@
 }
 
 .order-type__label--check::after {
-    content: "";
-    position: absolute;
-    background-color: @sea;
-    width: 17px;
-    height: 17px;
-    border-radius: 50%;
-    left: 13px;
-    top: 13px;
-  }
-
+  content: "";
+  position: absolute;
+  background-color: @sea;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  left: 13px;
+  top: 13px;
+}
 
 @media (min-width: @tablet-width) {
+  .order-type__inner {
+    display: flex;
+    align-items: flex-start;
+  }
+
   .order-type {
     padding: 0;
     margin: 0;
   }
 
-  .order-type__label::before {
-    width: 52px;
-    height: 52px;
+  .order-type__label {
+    padding: 0;
+
+    &::before {
+      width: 52px;
+      height: 52px;
+      margin-bottom: 14px;
+    }
   }
 
   .order-type__label--check::after {
     width: 21px;
     height: 21px;
     left: 17px;
-    top: 17px;
+    top: 8px;
   }
 }
-
