@@ -8,8 +8,8 @@ const sync = require("browser-sync").create();
 const rename = require("rename");
 const svgstore = require("svg-store");
 
-const styles = () => {
-    return gulp.src{"source/img/**/icon-*.svg"}
+const sprite = () => {
+return gulp.src("source/img/**/icon-*.svg")
     .pipe(svgstore())
     .pipe(rename("sprite.svg"))
     .pipe(gulp.dest("source/img"))
@@ -58,7 +58,8 @@ const watcher = () => {
 }
 
 exports.default = gulp.series(
-  styles, server, watcher
+  styles, sprite, server, watcher
+  
 );
 
 
